@@ -1,0 +1,51 @@
+{
+  "name": "soft_games",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/js/index.js",
+  "scripts": {
+    "setup": "npm install",
+    "clean": "rm -rvf dist",
+    "start": "webpack-dev-server --config webpack.config.js -d --progress true",
+    "build": "webpack --mode development --config webpack.config.js",
+    "build:prod": "webpack --config webpack.config.js -p --devtool none --progress true"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "RAJATH",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@pixi/particle-emitter": "^5.0.2",
+    "pixi-fps": "^2.0.1",
+    "pixi.js": "^6.2.0",
+    "random-words": "^1.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "babel-loader": "^8.0.6",
+    "clean-css": "^4.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "compression-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.5",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "img-loader": "^3.0.1",
+    "ip": "^1.1.5",
+    "path": "^0.12.7",
+    "terser-webpack-plugin": "^2.2.1",
+    "ts-loader": "^8.2.0",
+    "typescript": "^4.4.4",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^2.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
